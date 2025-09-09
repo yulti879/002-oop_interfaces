@@ -10,10 +10,10 @@ use App\Classes\Programmer;
 use App\Classes\Tester;
 
 $employees = [
-    new Manager("Петров", "Петр", 25, "маркетинг", 5, 3),
-    new Director("Сидоров", "Сидор", 50, "управление", 10, 5, "рост компании на 20%", 3),
-    new Programmer("Иванов", "Иван", 20, "PHP", 3, "веб-сайт"),
-    new Tester("Кузнецова", "Анна", 18, "функциональное тестирование", 15, "Selenium")
+    new Manager("Петров", "Петр", 25, "маркетинг", teamSize: 5, projects: 3),
+    new Director("Сидоров", "Сидор", 50, "управление", teamSize: 10, projects: 5, companyVision: "рост компании на 20%", branches: 3),
+    new Programmer("Иванов", "Иван", 20, "PHP", experience: 3, currentProject: "веб-сайт"),
+    new Tester("Кузнецова", "Анна", 18, "функциональное тестирование", bugsFound: 15, tool: "Selenium")
 ];
 
 foreach ($employees as $emp) {

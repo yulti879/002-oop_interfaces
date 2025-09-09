@@ -22,7 +22,7 @@ class Tester extends Employee implements WebinarSpeakerInterface {
     }
 
     public function reportBugs(): string {
-        return "находит {$this->bugsFound} багов";
+        return "за этот месяц нашла {$this->bugsFound} багов";
     }
 
     public function conductWebinar(): string {
